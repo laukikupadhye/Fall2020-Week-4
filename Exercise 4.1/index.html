@@ -2,19 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML Form </title>
+    <title>Individual Project</title>
 </head>
-<body>
-<h3>
-    Form Design Exercise:
-</h3>
-<p style="font-family: Helvetica;font-size: medium">
-    Disregarding the style of the page: <br>
-    <a href="https://forms.gle/qjz8MKR4YXWkWCVLA">https://forms.gle/qjz8MKR4YXWkWCVLA</a>
-</p>
-<p style="font-family: Helvetica;font-size: medium">
-    Try to replecate the format of the form in the page.<br>
-    Make use of "Label", "Input" and "Table".
-</p>
+<style>
+
+    label span{
+        color:red;
+        line-height:2.4
+    }
+    table{
+        width:600px;
+        height:400px;
+        text-align:left;
+       	border-spacing: 10px;
+
+    }
+    table.center {
+        margin-left:500px; 
+        margin-right:auto;
+    }
+    table td{
+    	border: 0.5px solid lightgray;
+    	border-radius: 10px;
+    	background-color: white;
+    	padding: 10px;
+
+    }
+   
+    label{
+    	font-size: 15px;
+        color: #303030;
+    }
+
+    input.txtbox {
+		font-family: inherit;
+		width: 300px;
+		border: 0;
+		border-bottom:2px solid lightgray;
+		outline: 0;
+		font-size: 16px;
+		padding: 7px 0;
+		background: transparent;
+		
+
+		&::placeholder {
+			color: transparent;
+		}
+	}
+
+</style>
+<body style="background-color:#f2edff">
+<table class="center">
+    <tr>
+        <td>
+            <h1 align="center" ><label for="title" style="font-size:30px"><b>Individual Project</b></label></h1>
+            <label><b><i>Choose a topic and research interest for individual project</i></b></label><br>
+            <label><span>*Required</span></label>
+        </td>
+        
+    </tr>
+    <tr>
+        <td>
+            <label for="emaillabel" class="test"><b>Email address<span>*</span></b></label><br>
+            <input type="input" class="txtbox" placeholder="Your input">
+       </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label class="test"><b>First Name</b></label><br>
+            <input type="input" class="txtbox" placeholder="Your input">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label class="test"><b>Last Name</b></label><br>
+            <input type="input" class="txtbox" placeholder="Your input">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label class="test"><b>Research Interest (list at least 3) <span>*</span></b></label><br>
+            <input type="input" class="txtbox" placeholder="Your input">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label class="test"><b>Project Title - (e.g. income vs education US Census) <span>*</span></b></label><br>
+            <input type="input" class="txtbox" placeholder="Your input">
+        </td>
+    </tr>
+
+	<tr>
+		<td>
+			 <label class="test"><b>Top Skills<span>*</span></b></label><br>
+			<input type="checkbox" id="skills" name="SQL">
+			<label> SQL</label><br>
+
+			<input type="checkbox" id="skills" name="Python programming">
+			<label> Python programming</label><br>
+
+			<input type="checkbox" id="skills" name="Matlab">
+			<label> Matlab</label><br>
+
+			<input type="checkbox" id="skills" name="D3js and Javascript">
+			<label> D3js and Javascript</label><br>
+
+			<input type="checkbox" id="skills" name="C# VB.net">
+			<label> C# VB.net</label><br>
+
+			<input type="checkbox" id="skills" name="PHP">
+			<label> PHP</label><br>
+
+			<input type="checkbox" id="skills" name="Node.JS">
+			<label> Node.JS</label><br>
+
+			<input type="checkbox" id="skills" name="Web design tools (e.g. Wordpress)">
+			<label> Web design tools (e.g. Wordpress)</label><br>
+
+			<input type="checkbox" id="skills" name="HTML and CSS">
+			<label> HTML and CSS</label><br>
+
+			<input type="checkbox" id="skills" name="Excel,">
+			<label> Excel,</label><br>
+
+			<input type="checkbox" id="skills" name="PowerBI">
+			<label> PowerBI</label><br>
+
+			<input type="checkbox" id="skills" name="Tableau">
+			<label> Tableau</label><br>
+
+			<input type="checkbox" id="skills" name="Option 13">
+			<label> Option 13</label><br>
+
+			<input type="checkbox" id="skills" name="Other:">
+			<label> Other:</label><br>
+		</td>
+	</tr>   
+
+	<tr>
+		<td align="center">
+			<button  type="submit" form="nameform" value="Submit" style="color:white;background-color: #663ab7;width: 100px;height: 30px;">Submit</button>
+		</td>
+	</tr> 
+
+</table>
+
 </body>
 </html>
+
