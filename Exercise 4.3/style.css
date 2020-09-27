@@ -1,5 +1,37 @@
 /* CSS reset */
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    width: 50vw;
+    overflow: hidden;
+    background-color: #483D8B;
+    alignment: center;
+}
 
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #FFA07A;
+}
+p{
+    width: 45vw;
+}
+div
+{
+    margin: auto;
+    width: 50vw;
+}
 
 /* Global styles */
 /* Background, color, font-family */

@@ -4,33 +4,41 @@
     <title>Week 4</title>
     <meta charset="utf-8">
     <!--create a new stylesheet document and include it here-->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet'>
 </head>
 <body>
 <div class="container">
     <h1>CIS 586/ DSC 530 Week 4: Markup and Style</h1>
     <nav role="navigation" class="nav-bar">
         <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="IndividualProject.html">Individual Project</a></li>
-            <li><a href="GroupProject.html">Group Project</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#individual">Individual Project</a></li>
+            <li><a href="#group">Group Project</a></li>
         </ul>
     </nav>
+
     <div class="projects">
+        <a id="about"></a>
+        <div class="about me">
+            <h2>About Me</h2>
+            <img src="assets/filler.jpg" alt="placeholder"/>
+            <p>I am Laukik Upadhye, pursuing masters in Data Science. I am currently taking Data Visualization course, in that, I am learning different visualization in D3JS, and will include them in HTML. </p>
+        </div>
+
+        <a id="individual"></a>
         <div class="pro individual">
             <h2>Individual Project</h2>
             <img src="assets/filler.jpg" alt="placeholder"/>
-            <p>Some description</p>
+            <p>Topic: US Natural Disasters <br>In this project I will present report about natural disasters in US from 1953. For this I am using data provided by <b> Federal Emergency Management Agency</b>.</p>
         </div>
+        <a id="group"></a>
         <div class="pro group">
             <h2>Group Project</h2>
             <img src="assets/filler.jpg" alt="placeholder"/>
-            <p>Some description</p>
+            <p>Topic: Netfilx data and recommendation<br>In this project we will showcase Netflix data analysis, and provide movie recommendation based on selected movie.</p>
         </div>
     </div>
-    <div class="special-content">
-        <p>Check out special content here</p>
-    </div>
+    
 </div>
 </body>
 </html>
